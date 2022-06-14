@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Digital Clock Javascript | CodingNepal</title> -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+</html>
+	<title>IDRIS SALAH</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+	<!----hero Section start---->
+
+	<div class="hero">
+		<nav>
+			<h2 class="logo">IDRIS<span>ART</span></h2>
+
+  </body>
+			<ul>
+				<li><a href="RXWEN.HTML">Home</a></li>
+				<li><a href="Gellery.HTML">Gellery</a></li>
+			</ul>
+			<a href="contact.html" class="btn">Contact</a>
+		</nav>
+
+		<div class="content">
+			<h4>Hello, my name is</h4>
+			<h1>Idris <span>Salah</span></h1>
+			<h3>I'am artist.</h3>
+			<div class="newslatter">
+				
+					<div class="clock">
+      <div class="display">
+</div>
+</div>
+<script>
+      setInterval(function(){
+        const clock = document.querySelector(".display");
+        let time = new Date();
+        let sec = time.getSeconds();
+        let min = time.getMinutes();
+        let hr = time.getHours();
+        let day = 'AM';
+        if(hr > 12){
+          day = 'PM';
+          hr = hr - 12;
+        }
+        if(hr == 0){
+          hr = 12;
+        }
+        if(sec < 10){
+          sec = '0' + sec;
+        }
+        if(min < 10){
+          min = '0' + min;
+        }
+        if(hr < 10){
+          hr = '0' + hr;
+        }
+        clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+      });
+    </script>
+				
+			</div>
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section class="about">
+		<div class="main">
+			<img src="./ida.jpg">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<h5>ARTIST <span>& SKETCH PAINTER</span></h5>
+				<p>Im 19 years old and I live in Darbandikhan, I am a first-grade medical student and I have a passion for painting and I have enough experience in it and of course painting will not be my main job but I will use the talent that God has given me for beautiful and good work next to my medicine</p>
+				<button type="button">Let's Talk</button>
+			</div>
+		</div>
+	</section>
+
+	<!-----service section start----------->
+	
+
+			
+
+	<!------Contact Me------>
+	
+
+	<!------footer start--------->
+	<footer>
+		<p>Pirozi</p>
+		
+		<div class="social">
+			<a href="https://www.facebook.com/rawen.ly"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://instagram.com/rxwenn?igshid=NDBlY2NjN2I="><i class="fab fa-instagram"></i></a>
+			<a href="https://t.snapchat.com/C0KQJITN"><i class="fab fa-snapchat"></i></a>
+		</div>
+		<p class="end">CopyRight By Rawen sherko</p>
+	</footer>
+</body>
+</html>
